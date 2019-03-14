@@ -3,15 +3,17 @@ require 'pry'
 class String
 
   def sentence?
-    include? "."
+    self.end_with? (".")
+    #include? "."
   end
 
   def question?
-    include? "?"
+    self.end_with? ("?")
+    #include? "?"
   end
 
   def exclamation?
-    include? "!"
+    self.end_with? ("!")
   end
 
   def count_sentences
